@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Model\" />
+    <None Remove="Interface\" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="EFLayer\" />
+    <None Remove="BusinessLayer\" />
+    <None Remove="ServiceLayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Interface\" />
+    <Folder Include="EFLayer\" />
+    <Folder Include="BusinessLayer\" />
+    <Folder Include="ServiceLayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.22" />
+  </ItemGroup>
+</Project>
